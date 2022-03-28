@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">    
+<html>    
+<head>    
+    <title>Login Form</title>        
+</head> 
+<meta charset="utf-8">
+<body>    
+    <h2>Student Login</h2><br>    
+    <div class="login"> 
+        <br>
+    <header>
+        <nav>
+            <span class="header_sign">
+            <a href="Signup.html">Sign Up</a>
+            <a href="Signin.html"Id="active">Sign In</a>
+            </span>  
+            <br/>  
+        </nav>
+    </header>    
+    <form action="login" method="GET">       
+        <br><br><br>   
+        <input type="text" name="Uname" id="Uname" placeholder="Username" 
+        required oninvalid="this.setCustomValidity('Please enter your username')"
+        oninput="this.setCustomValidity('')" >    
+        <br><br>    
+        <input type="Password" name="Pass" id="Pass" minlength="3" placeholder="Password" 
+        required oninvalid="this.setCustomValidity('Please enter password')"
+                    oninput="this.setCustomValidity('')">    
+        <br><br>    
+        <button type="submit" name="log" id="log">Log in </button>      
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span id="span_1">Remember me</span>    
+        <br><br>    
+        <a href="#">Forgotten Password?</a>    
+    </form>     
+</div>    
+</body>
+<style>
+html, body {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+body  
+{ 
+    margin: 0;  
+    padding: 0;  
+    background-color:hsl(202, 11%, 86%);  
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: white;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: rgb(24,119,242);  
+    padding: 20px;  
+}  
+label{  
+    color: black;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;
+    background-color:hsl(202, 11%, 86%);  
+    border:black;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    font-family: "Gill Sans", sans-serif;
+}  
+#Name{
+    width: 300px;  
+    height: 30px;
+    background-color:hsl(202, 11%, 86%);  
+    border:black;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    font-family: "Gill Sans", sans-serif;
+}  
+#number
+{width: 300px;  
+    height: 30px;
+    background-color:hsl(202, 11%, 86%);  
+    border:black;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    font-family: "Gill Sans", sans-serif;
+}  
+#Email{
+    width: 300px;  
+    height: 30px;
+    background-color:hsl(202, 11%, 86%);  
+    border:black;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    font-family: "Gill Sans", sans-serif;
+}  
+
+#Pass{  
+    width: 300px;  
+    height: 30px;
+    background-color:hsl(202, 11%, 86%);   
+    border: black;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+    font-family: "Gill Sans", sans-serif;
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border:none; 
+    background-color:rgb(24,119,242);
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color:white;  
+  
+  
+}  
+#span_1{  
+    color:black;  
+    font-size: 17px;  
+}
+#span_2{  
+    color:black;  
+    font-size: 14px;  
+}  
+a{  
+    float: left;  
+      
+}  
+button:hover {   
+    opacity: 0.7;   
+}  
+#Pass:hover {   
+    opacity: 0.7;   
+}  
+#Uname:hover {   
+    opacity: 0.7;   
+}  
+.header_sign{
+    margin-top: -4%;
+    margin-left:4%;
+    background-color:hsl(202, 11%, 86%);
+    border-radius: 20px;
+    height: 60%;
+    width: 34%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .header_sign a{
+    border-color:  rgb(24,119,242);
+    color: hsl(202, 11%, 86%) ;
+    padding-top: 3px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5% ;
+    width: 34%;
+    border-radius: 18.5px;
+    height: 50%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header_sign a:hover{
+    background-color:rgba(29, 7, 5, 0.822) ;
+    background-color: rgb(24,119,242);
+    color: white;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#active{
+    background-color:rgb(24,119,242) ;
+    color: white;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    text-align: center;
+    display: inline;
+}
+</style>      
+</html>
